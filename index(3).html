@@ -6,7 +6,7 @@
 
 <style>
 body{
-    background-image: url("../4 A/img/fondo2.jpg");
+    background-image: url("fondo2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,25 +61,20 @@ img{
     <source src="../4 A/audio/musica.mp3" type="audio/mpeg">
 </audio>
 
-<script>
-document.addEventListener("click", function() {
-    let audio = document.getElementById("musica");
-    audio.play();
-});
-</script>
+
 
 <div class="menu">
-<a href="../4 A/index.html" class="btn">Inicio</a>
-<a href="../4 A/index(2).html" class="btn">Economía</a>
-<a href="../4 A/index(3).html" class="btn">lugares de interes</a>
-<a href="../4 A/index(4)" class="btn">Taller</a>
+<a href="index.html"class="btn">Inicio</a>
+<a href="index5.html" class="btn">Economía</a>
+<a href="index(4).html" class="btn">lugares de interes</a>
+<a href="index(3).html"  class="btn">Taller</a>
 </div>
 
 
 
 <div style="text-align:center; margin-top:20px;">
 
-<img src="../4 A/img/ojo.png" width="120">
+<img src="ojo.png"width="120">
 
 <h2 style="color:yellow;">
 Contador de visitas
@@ -96,23 +91,6 @@ Contador de visitas
 if(localStorage.getItem("visitas") === null){
 
     localStorage.setItem("visitas", "1");
-
-}else{
-
-    let visitas =
-    parseInt(localStorage.getItem("visitas"));
-
-    visitas++;
-
-    localStorage.setItem("visitas", visitas);
-
-}
-
-document.getElementById("numero-visitas").innerText =
-localStorage.getItem("visitas");
-
-</script>
-	
 	
 <div class="menu">
 <a href="#servicio" class="btn">Servicio</a>
