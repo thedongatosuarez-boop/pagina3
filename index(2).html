@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Presentación - Tres Valles</title>
+
+<style>
+body{
+    background-image: url("../4 A/img/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.menu{
+    text-align: center;
+    margin-bottom: 20px;
+	
+	
+}
+
+.menu a{
+    background: orange;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    background: red;
+    color: white;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="musica" loop>
+    <source src="../4 A/audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    let audio = document.getElementById("musica");
+    audio.play();
+});
+</script>
+
+
+<div class="menu">
+<a href="../4 A/index.html" class="btn">Inicio</a>
+<a href="../4 A/index(2).html" class="btn">Economía</a>
+<a href="../4 A/index(3).html" class="btn">lugares de interes</a>
+<a href="../4 A/index(4)" class="btn">Taller</a>
+</div>
+
+
+
+<div style="text-align:center; margin-top:20px;">
+
+<img src="../4 A/img/ojo.png" width="120">
+
+<h2 style="color:yellow;">
+Contador de visitas
+</h2>
+
+<h1 id="numero-visitas" style="color:white;">
+0
+</h1>
+
+</div>
+
+<script>
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>
+	
+	
+
+<h1 style="text-align:center;"><b><i>Tres valles</i></b></h1>
+
+<img src="../4 A/img/letras.jpeg" width="400">
+
+
+<p style="text-align: justify;">
+<b>Tres Valles</b> es un municipio que se distingue por su <i>desarrollo social,
+económico y cultural</i>. Se caracteriza por ser una comunidad donde las personas
+mantienen una convivencia cercana, basada en el respeto, la cooperación y las
+tradiciones que se han conservado a lo largo del tiempo.
+</p>
+
+<p style="text-align: justify;">
+Este municipio ha logrado crecer gracias al esfuerzo constante de sus habitantes,
+quienes participan en diferentes actividades productivas como la agricultura,
+la industria y el comercio. Estas actividades permiten que la economía local
+se mantenga activa y en constante evolución.
+</p>
+
+<p style="text-align: justify;">
+Uno de los aspectos más importantes de Tres Valles es su identidad cultural,
+la cual se refleja en sus costumbres, celebraciones y forma de vida. Las tradiciones
+se transmiten de generación en generación, fortaleciendo el sentido de pertenencia
+entre los habitantes.
+</p>
+
+<p style="text-align: justify;">
+Además, el municipio cuenta con diversos espacios recreativos y culturales que
+permiten a la población desarrollarse en distintos ámbitos. Lugares como parques,
+unidades deportivas y centros culturales son fundamentales para la convivencia social.
+</p>
+
+<p style="text-align: justify;">
+La vida en Tres Valles también se caracteriza por la participación activa de la
+comunidad en eventos sociales, deportivos y culturales. Estas actividades fomentan
+la unión entre las personas y contribuyen a crear un ambiente agradable para todos.
+</p>
+
+<p style="text-align: justify;">
+Otro aspecto relevante es el crecimiento urbano que ha tenido el municipio,
+lo cual ha permitido mejorar la infraestructura y los servicios básicos.
+Esto facilita la vida diaria de los habitantes y contribuye al desarrollo general.
+</p>
+
+<p style="text-align: justify;">
+Asimismo, la educación y el trabajo son pilares importantes dentro de la comunidad,
+ya que permiten el progreso individual y colectivo. Muchas personas buscan mejorar
+su calidad de vida a través del esfuerzo y la preparación.
+</p>
+
+<p style="text-align: justify;">
+En general, Tres Valles es un lugar que combina tradición y desarrollo,
+ofreciendo a sus habitantes un entorno donde pueden crecer, convivir y
+formar parte de una comunidad unida.
+</p>
+
+
+<h2>Características principales</h2>
+<ol>
+<li>Actividad agrícola, industrial y comercial</li>
+<li>Espacios recreativos y culturales</li>
+<li>Tradiciones y costumbres arraigadas</li>
+<li>Convivencia social y comunitaria</li>
+<li>Desarrollo urbano y crecimiento económico</li>
+</ol>
+
+<p style="text-align: justify;">
+En conclusión, <b>Tres Valles</b> es un municipio que destaca por su organización,
+su gente trabajadora y su riqueza cultural, siendo un lugar importante dentro
+de la región y un ejemplo de desarrollo comunitario.
+</p>
+
+	
+<h2>Fuentes</h2>
+<ol>
+<li>https://https://en.wikipedia.org/wiki/Tres_Valles</li>
+</ol>
+	
+</body>
+</html>

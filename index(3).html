@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brief - Taller de Soldadura Nicolas </title>
+
+<style>
+body{
+    background-image: url("../4 A/img/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+
+img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+</style>
+
+</head>
+
+<body>
+
+<audio id="musica" loop>
+    <source src="../4 A/audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    let audio = document.getElementById("musica");
+    audio.play();
+});
+</script>
+
+<div class="menu">
+<a href="../4 A/index.html" class="btn">Inicio</a>
+<a href="../4 A/index(2).html" class="btn">Economía</a>
+<a href="../4 A/index(3).html" class="btn">lugares de interes</a>
+<a href="../4 A/index(4)" class="btn">Taller</a>
+</div>
+
+
+
+<div style="text-align:center; margin-top:20px;">
+
+<img src="../4 A/img/ojo.png" width="120">
+
+<h2 style="color:yellow;">
+Contador de visitas
+</h2>
+
+<h1 id="numero-visitas" style="color:white;">
+0
+</h1>
+
+</div>
+
+<script>
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>
+	
+	
+<div class="menu">
+<a href="#servicio" class="btn">Servicio</a>
+<a href="#marca" class="btn">Marca</a>
+<a href="#publico" class="btn">Público</a>
+<a href="#competencia" class="btn">Competencia</a>
+<a href="#presupuesto" class="btn">Presupuesto</a>
+<a href="#vision" class="btn">Visión</a>
+<a href="#beneficios" class="btn">Beneficios</a>
+<a href="#contacto" class="btn">Contacto</a>
+</div>
+
+<h1 style="text-align:center;"><b><i>Taller de soldadura Nicolas</i></b></h1>
+<h2 id="servicio">Servicio</h2>
+<p style="text-align: justify;">
+El <b>Taller de Soldadura</b> se especializa en la <i>fabricación, reparación y mantenimiento</i> de estructuras 
+metálicas, ofreciendo soluciones prácticas y resistentes para diferentes necesidades. Entre los servicios que se 
+realizan se encuentran la elaboración de puertas, ventanas, rejas, portones, protecciones, barandales y estructuras
+personalizadas.
+</p>
+
+<p style="text-align: justify;">
+Además, se brinda atención directa al cliente para diseñar trabajos a medida, tomando en cuenta el espacio disponible, el uso que se le dará y el presupuesto. Esto permite ofrecer un servicio más completo y adaptado a cada persona.
+</p>
+
+<p style="text-align: justify;">
+El objetivo principal es garantizar productos <u>duraderos, seguros y de buena calidad</u>, utilizando materiales resistentes y técnicas adecuadas.
+</p>
+
+<img src="../4 A/img/logo nicolas.jpg" width="300">
+
+<h2 id="marca">Marca y posicionamiento</h2>
+<p style="text-align: justify;">
+El taller busca posicionarse como un negocio <b>confiable dentro de la comunidad</b>, destacando por su responsabilidad, honestidad y cumplimiento en cada trabajo realizado. Se pretende que los clientes identifiquen al taller como una opción segura.
+</p>
+
+<p style="text-align: justify;">
+La marca transmite valores como <i>confianza, calidad y compromiso</i>, logrando que las personas recomienden el servicio.
+</p>
+
+<h2 id="publico">Público meta</h2>
+<p style="text-align: justify;">
+El público al que va dirigido este servicio incluye a familias, propietarios de viviendas, pequeños negocios y cualquier persona que requiera trabajos en metal. Principalmente se enfoca en habitantes de la comunidad de Tres Valles y zonas cercanas, quienes buscan mejorar la seguridad de sus hogares o negocios mediante la instalación de estructuras resistentes. También puede atender proyectos más específicos según la necesidad del cliente..
+</p>
+
+<p style="text-align: justify;">
+También puede atender proyectos más específicos según la necesidad del cliente, adaptándose a diferentes situaciones.
+</p>
+
+<h2 id="competencia">Competencia</h2>
+<p style="text-align: justify;">
+En la localidad existen otros talleres que ofrecen servicios similares, lo que genera competencia en el mercado. Sin embargo, este taller se diferencia por su trato directo con el cliente, la calidad de los materiales utilizados y la responsabilidad en la entrega de los trabajos. Además, se busca ofrecer precios accesibles sin descuidar la calidad, lo cual representa una ventaja frente a otros negocios..
+</p>
+
+<p style="text-align: justify;">
+Además, se busca ofrecer precios accesibles sin descuidar la calidad.
+</p>
+
+<h2 id="presupuesto">Presupuesto</h2>
+<p style="text-align: justify;">
+El costo de los servicios depende del tipo de trabajo solicitado, los materiales requeridos y el tamaño del proyecto. Se realizan cotizaciones previas para que el cliente conozca el precio antes de iniciar el trabajo. El objetivo es mantener un equilibrio entre calidad y precio, ofreciendo opciones accesibles para la mayoría de la población sin reducir la durabilidad de los productos.
+</p>
+
+<p style="text-align: justify;">
+El objetivo es mantener un equilibrio entre calidad y precio.
+</p>
+
+<h2 id="vision">Visión</h2>
+<p style="text-align: justify;">
+La visión es convertirse en uno de los talleres más reconocidos en la zona, La visión del taller es convertirse en uno de los negocios más reconocidos en Tres Valles en el área de soldadura, destacando por su calidad, responsabilidad y buen servicio. A futuro se busca crecer, ampliar los servicios ofrecidos y mejorar continuamente las técnicas de trabajo para satisfacer las necesidades de los clientes..
+</p>
+
+<p style="text-align: justify;">
+A futuro se busca crecer y mejorar continuamente.
+</p>
+
+<h2 id="beneficios">Beneficios</h2>
+<p style="text-align: justify;">
+Los beneficios incluyen seguridad, durabilidad y personalización en cada trabajo.
+</p>
+
+<p style="text-align: justify;">
+Las estructuras ayudan a proteger viviendas y negocios.
+</p>
+	
+<h2 id="alcance del proyecto">Alcance del proyecto</h2>
+<p style="text-align: justify;">
+Creación de una identidad visual para el servicio de soldadura, incluyendo el diseño de un logotipo representativo con 
+un cabrito como símbolo
+</p>
+	
+<p style="text-align: justify;">
+TallerNicolas@gmail.com
+</p>
+		
+<h2 id="contacto">Contacto</h2>
+<p style="text-align: justify;">
+Los clientes pueden solicitar información directamente en el taller o por teléfono.
+</p>
+
+<p style="text-align: justify;">
+Se ofrece atención personalizada para garantizar satisfacción.
+</p>
+
+<p style="text-align: justify;">
+2881022478
+</p>
+		
+<p style="text-align:center;">
+
+<a href="mailto:tallernicolas512@gmail.com"
+style="color: yellow;
+font-size: 22px;
+font-weight: bold;
+text-decoration: none;">
+
+Enviar un correo electrónico
+
+</a>
+
+</p>
+	
+	
+</body>
+</html>
